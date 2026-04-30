@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bokalo Bohdan - Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <span class="logo">Resume</span>
+    </nav>
+    <section class="menu-container">
+      <button class="menu-show" aria-label="Toggle menu"></button>
+      <ul>
+        <li class="nav-li"><a href="#top">About me</a></li>
+        <li class="nav-li"><a href="#education">Education</a></li>
+        <li class="nav-li"><a href="#skills">Skills</a></li>
+        <li class="nav-li"><a href="#projects">Projects</a></li>
+        <li class="nav-li"><a href="#contact-me">Contact me</a></li>
+      </ul>
+    </section>
+    <section class="background-shadow"></section>
+
+    <main>
+      <header class="header">
+        <div class="personal-info">
+          <div class="img-container profile-img"></div>
+          <h1>Bokalo Bohdan</h1>
+          <h2>Frontend Developer</h2>
+        </div>
+
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate frontend developer with experience in creating
+            responsive and user-friendly websites. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sequi illo, ut accusantium similique
+            quae ex, consequatur laboriosam iusto reprehenderit, dolore ipsa.
+            Voluptatem delectus velit, nemo inventore ad asperiores reiciendis
+            libero.
+          </p>
+
+          <div class="personal-details">
+            <h3>Personal Details</h3>
+            <address>
+              Volodymyra Velykoho St, 79000 Lviv <br />
+              <a href="mailto:bokalobogdan440@gmail.com"
+                >bokalobogdan440@gmail.com</a
+              >, <a href="tel:+380677937033">+380677937033</a> <br />
+              Date of birth: March 15, 2006 <br />
+              LinkedIn:
+              <a
+                href="https://linkedin.com/in/bokalo-bohdan"
+                target="_blank"
+                rel="noopener"
+              >
+                linkedin.com/in/bokalo-bohdan
+              </a>
+            </address>
+          </div>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <section class="main-info appear">
+        <div class="ed-flex-container">
+          <div class="education-container" id="education">
+            <h2>Education</h2>
+            <h3>
+              Lviv Polytechnic National University - Computer Science <br />
+              <span class="date">2023 - present</span>
+            </h3>
+            <p>
+              <strong>Programming & Web Development:</strong> Building a solid
+              foundation in front-end development, utilizing JavaScript to
+              create functional and interactive web applications. <br />
+              <strong>Web Design & UI/UX:</strong> Experience in web design
+              principles, focusing on delivering visually appealing, responsive,
+              and highly usable interfaces.<br />
+              <strong>Data Analysis:</strong> Proficient in Excel for data
+              organization, creating complex tables, and transforming data into
+              clear visual charts.
+            </p>
+          </div>
+          <div class="img-container uni-img"></div>
+        </div>
+
+        <div class="skills-container appear" id="skills">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-box skill-category english">
+              <h3>
+                English <br />
+                <span>B1-B2</span>
+              </h3>
+              <div class="progress-bar eng"></div>
+            </div>
+
+            <div class="skill-box skill-category front-end">
+              <h3>Web-dev</h3>
+              <div class="skill-item">
+                <p>JavaScript</p>
+                <div class="progress-bar js"></div>
+              </div>
+              <div class="skill-item">
+                <p>ReactJS</p>
+                <div class="progress-bar react"></div>
+              </div>
+              <div class="skill-item">
+                <p>NodeJS</p>
+                <div class="progress-bar node"></div>
+              </div>
+              <div class="skill-item">
+                <p>MySQL</p>
+                <div class="progress-bar sql"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="projects-section" id="projects">
+        <h2 class="section-title">My Pet-projects</h2>
+
+        <article class="project-container coffee appear">
+          <div class="content">
+            <h3>Coffee Page</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              quas, esse dolorem exercitationem beatae fugiat voluptatem, enim
+              dignissimos ut laudantium veniam reiciendis labore ab maiores
+              voluptas ea veritatis aspernatur nisi.
+            </p>
+          </div>
+          <div class="project-gallery">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+          </div>
+        </article>
+
+        <article class="project-container art appear">
+          <div class="content">
+            <h3>Art Page</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              quas, esse dolorem exercitationem beatae fugiat voluptatem, enim
+              dignissimos ut laudantium veniam reiciendis labore ab maiores
+              voluptas ea veritatis aspernatur nisi.
+            </p>
+          </div>
+          <div class="project-gallery">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+          </div>
+        </article>
+
+        <article class="project-container hoodies appear">
+          <div class="content">
+            <h3>Hoodies Page</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              quas, esse dolorem exercitationem beatae fugiat voluptatem, enim
+              dignissimos ut laudantium veniam reiciendis labore ab maiores
+              voluptas ea veritatis aspernatur nisi.
+            </p>
+          </div>
+          <div class="project-gallery">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+          </div>
+        </article>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="form-section appear" id="contact-me">
+        <h2>Get In Touch With Me</h2>
+        <div class="form-container">
+          <form
+            action="https://formspree.io/f/mjgrpelz"
+            method="POST"
+            class="form"
+          >
+            <div class="form-inputs">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="input"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div class="form-inputs">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-inputs">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="input"
+                placeholder="Text me a message..."
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h3>Bokalo Bohdan</h3>
+        <p>Frontend Developer</p>
+        <div class="footer-links">
+          <a href="mailto:bokalobogdan440@gmail.com">Email</a>
+          <a
+            href="https://linkedin.com/in/bokalo-bohdan"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/Bokalo-Bohdan"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Bokalo Bohdan. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="to-top hidden"></a>
+  </body>
+</html>
