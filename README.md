@@ -2,6 +2,8 @@
 
 Modern interactive web-resume for demonstration front-end development skills.
 
+##URL You can visit my page by clicking this URL: https://bokalo-bohdan.github.io/portfolio-resume/
+
 ##Getting Started
 
 This instructions will help you to run web-resume on your PC.
@@ -16,7 +18,7 @@ Clone repository on your local device:
 
 ##Bash
 
-git clone https://github.com/Bokalo_Bohdan/your-repo-name.git
+git clone https://github.com/Bokalo_Bohdan/portfolio-resume.git
 
 Go to folder with project.
 
