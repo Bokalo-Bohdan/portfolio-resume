@@ -41,7 +41,7 @@ const openMenu = () => {
 
   gsap.to(showMenuBtn, {
     x: -100,
-    y: -60,
+    y: -40,
     ease: "none",
     duration: 0.1,
   });
