@@ -30,6 +30,8 @@ body {
   font-family: var(--primary-font);
   font-weight: 500;
   color: var(--text-dark);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1,
@@ -160,7 +162,7 @@ a.to-top.hidden {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s;
@@ -339,7 +341,7 @@ a.to-top.hidden {
 }
 /* education & skills end */
 
-/*  projects start */
+/* projects start */
 .projects-section {
   padding: 5rem 0 1rem 0;
 }
@@ -430,9 +432,9 @@ a.to-top.hidden {
 .hoodies .img4 {
   background-image: url(photo/hoodies/4.png);
 }
-/*  projects end */
+/* projects end */
 
-/*  form start  */
+/* form start  */
 .form-section {
   padding: 5rem 0;
 }
@@ -486,9 +488,9 @@ form .input:focus {
   color: var(--text-light);
   background-color: var(--text-dark);
 }
-/*  form end  */
+/* form end  */
 
-/*  footer start  */
+/* footer start  */
 .footer {
   background-color: var(--divider-gray);
   padding: 4rem 0 2rem 0;
@@ -524,4 +526,115 @@ form .input:focus {
   margin-top: 3rem;
   font-size: 0.9rem;
 }
-/*  footer end  */
+/* footer end  */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .divider {
+    margin: 3rem auto;
+  }
+
+  .skills-container,
+  .project-container,
+  .form-container {
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .menu-container {
+    width: 60%;
+    left: -60%;
+  }
+  .menu-show {
+    right: -60px;
+    top: 2%;
+    transform: scale(0.8);
+  }
+  a.to-top {
+    bottom: 2%;
+    right: 2%;
+    transform: scale(0.8);
+  }
+
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+  }
+  .about-me p,
+  .personal-details address {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .ed-flex-container {
+    margin: 2rem 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .education-container h3 {
+    text-align: center;
+  }
+  .uni-img {
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .skills-container {
+    margin: 3rem auto;
+  }
+  .skill-item {
+    width: 100%;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+  .project-container .content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .project-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .art .project-gallery {
+    order: 0;
+  }
+  .project-gallery div {
+    width: 100%;
+    height: 300px;
+  }
+
+  .form-container {
+    width: 95%;
+    margin: auto;
+    padding: 1.5rem;
+  }
+
+  .footer {
+    padding: 3rem 0 1.5rem 0;
+  }
+  .footer-links a {
+    display: block;
+    margin: 15px 0;
+  }
+}

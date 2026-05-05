@@ -5,6 +5,12 @@ let showMenuBtn = document.querySelector(".menu-show");
 let menu = document.querySelector(".menu-container");
 let bgShadow = document.querySelector(".background-shadow");
 let navLi = document.querySelectorAll(".nav-li");
+let header = document.querySelector(".header");
+
+gsap.from(header, {
+  opacity: 0,
+  duration: 1,
+});
 
 const closeMenu = () => {
   showMenuBtn.classList.remove("close-menu");
